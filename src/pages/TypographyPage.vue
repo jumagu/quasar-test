@@ -1,7 +1,11 @@
 <script setup lang="ts">
+import { useUiStore } from 'src/stores/ui-store';
+
 defineOptions({
   name: 'TypographyPage',
 });
+
+const uiStore = useUiStore();
 </script>
 
 <template>
@@ -47,5 +51,11 @@ defineOptions({
     <span class="text-weight-bolder">
       Deserunt veniam cillum enim consectetur
     </span>
+    <q-btn
+      color="primary"
+      :label="uiStore.isSideMenuOpen ? 'Close side menu' : 'Open side menu'"
+      class="q-mt-lg"
+      @click="uiStore.toggleSideMenu"
+    ></q-btn>
   </q-page>
 </template>

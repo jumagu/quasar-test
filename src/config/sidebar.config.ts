@@ -19,4 +19,16 @@ export const linksList: EssentialLinkProps[] = [
     icon: 'las la-layer-group',
     link: 'flex',
   },
+  {
+    title: 'Dialog',
+    caption: 'Alerts, comfirm and prompts',
+    icon: 'las la-window-minimize',
+    link: 'dialog',
+  },
+  {
+    title: 'Forms',
+    caption: 'Inputs, checkbox, validations...',
+    icon: 'lab la-wpforms',
+    link: 'forms',
+  },
 ];

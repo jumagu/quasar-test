@@ -10,14 +10,24 @@ const routes: RouteRecordRaw[] = [
         component: () => import('pages/IndexPage.vue'),
       },
       {
-        path: '/typography',
+        path: 'typography',
         name: 'typography',
         component: () => import('pages/TypographyPage.vue'),
       },
       {
-        path: '/flex',
+        path: 'flex',
         name: 'flex',
         component: () => import('pages/FlexPage.vue'),
+      },
+      {
+        path: 'dialog',
+        name: 'dialog',
+        component: () => import('pages/DialogPage.vue'),
+      },
+      {
+        path: 'forms',
+        name: 'forms',
+        component: () => import('pages/FormsPage.vue'),
       },
     ],
   },
